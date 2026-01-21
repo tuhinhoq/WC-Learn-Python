@@ -1,26 +1,19 @@
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
 def add():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
-    print("Sum:", a + b)
+       print("Sum:", a + b)
 
 def subtract():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
-    print("Difference:", a - b)
+       print("Difference:", a - b)
 
 def multiply():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
     print("Product:", a * b)
 
 def divide():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
     print("Product:", a / b)
 
 def percent():
-    a = int(input("Enter a: "))
-    b = int(input("Enter b: "))
     print("Product:", a/100*b)
 
 while True:
@@ -43,7 +36,7 @@ while True:
         divide()
     elif choice == "5":
        percent()
-    elif choice>"6":
+    elif choice>="6":
         break
     else:
         print("Invalid choice")
