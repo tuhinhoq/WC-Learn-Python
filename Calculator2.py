@@ -1,39 +1,49 @@
-print("Enter a number: ")
-a=input()
-b=int(a)
+def add():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print("Sum:", a + b)
 
-print("Enter another number: ")
-d=input()
-c=int(d)
+def subtract():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print("Difference:", a - b)
 
+def multiply():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print("Product:", a * b)
 
-print("Press: 1 For Add, 2 For Sub, 3 For Multiply, 4 For Divided")
-bb=input()
-aa=int(bb)
+def divide():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print("Product:", a / b)
 
+def percent():
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
+    print("Product:", a/100*b)
 
+while True:
+    print("\n1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Percent")
+    print("6. Exit")
 
-def add(b,c):
-    return b+c
-def sub(b,c):
-    return b-c
-def mul(b,c):
-    return b*c
-def div(b,c):
-    return b/c
+    choice = input("Enter your choice: ")
 
-
-
-if aa==1:
-    print(b, "+", c, "=", add(b,c))
-elif aa==2:
-    print(b, "-", c, "=", sub(b,c))
-elif aa==3:
-    print(b, "*", c, "=", mul(b,c))
-elif aa==4:
-    print(b, "/", c, "=", div(b,c))
-else:
-    print("Wrong Input.")
-
-
-
+    if choice == "1":
+        add()
+    elif choice == "2":
+        subtract()
+    elif choice == "3":
+        multiply()
+    elif choice == "4":
+        divide()
+    elif choice == "5":
+       percent()
+    elif choice>"6":
+        break
+    else:
+        print("Invalid choice")
